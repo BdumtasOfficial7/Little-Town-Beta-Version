@@ -12,3 +12,9 @@ button {
     font-size: 16px;
     cursor: pointer;
 }
+
+.person-bar .overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
