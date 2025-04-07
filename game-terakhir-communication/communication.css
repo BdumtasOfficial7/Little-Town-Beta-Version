@@ -1,0 +1,66 @@
+/* body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #f0f8ff;
+    padding: 20px;
+    margin: 0;
+    text-decoration: none;
+  } */
+  
+  #game-container {
+    /* background: salmon; */
+    border-radius: 12px;
+    padding: 30px;
+    max-width: 400px;
+    margin: auto;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  }
+  
+  #avatar {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+  }
+  
+  #question {
+    font-size: 20px;
+    margin: 20px 0;
+  }
+  
+  #start-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  #start-button:hover {
+    background-color: #45a049;
+  }
+  
+  #response, #score, #level {
+    margin-top: 15px;
+    font-weight: bold;
+  }
+
+  .close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  .overlay .close a {
+    width: 60px;
+    height: 25px;
+    background-color: salmon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+  }

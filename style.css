@@ -1,0 +1,155 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+}
+
+/* Container */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container .profile-card {
+    width: 480px;
+    height: 625px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    background-image: url(image/img-bg.png);
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Block 1 */
+
+.profile-card .rumah7 {
+    width: 50px;
+    height: 50px;
+    margin-top: 140px;
+    margin-left: 100px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+}
+
+/* Block 2 */
+
+.rumah56 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.profile-card .rumah5, .rumah6 {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Block 3 */
+
+.rumah-end {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+.rumah-end-position {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+}
+
+/* Block 4 */
+.rumah1234 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.rumah4, .rumah3, .rumah2, .rumah1, .person {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+}
+
+/* Block 5 */
+.person-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
+}
+
+.person {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.person a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Overlay */
+.overlay {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 9999;
+    transition: .5s;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    font-size: 20px;
+}
+
+.overlay:target {
+    width: auto;
+    height: auto;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.overlay img {
+    max-width: 100%;
+}
+
+.overlay:target img {
+    animation: zoomAndFade .5s;
+}
+
+
+/* Animasi */
+
+@keyframes zoomAndFade {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
