@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #e0eafc, #cfdef3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+}
+
+.game-box {
+  background: #fff;
+  padding: 30px 25px;
+  border-radius: 18px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+h1 {
+  font-size: 26px;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.level {
+  font-size: 18px;
+  color: #2980b9;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.image-container {
+  margin: 20px 0;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-container img:hover {
+  transform: scale(1.03);
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  margin: 15px 0;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.btn {
+  flex: 1;
+  padding: 12px;
+  font-size: 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  transition: 0.3s ease;
+}
+
+.submit {
+  background-color: #3498db;
+}
+.submit:hover {
+  background-color: #2980b9;
+}
+
+.speak {
+  background-color: #2ecc71;
+}
+.speak:hover {
+  background-color: #27ae60;
+}
+
+.exit {
+  background-color: #e74c3c;
+}
+.exit:hover {
+  background-color: #c0392b;
+}
+
+.result-text {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2d3436;
+}
+
+.hidden {
+  display: none;
+}

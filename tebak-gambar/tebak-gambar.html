@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Guess the Picture</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style-tebak-gambar.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="game-box">
+      <h1>Guess the Picture</h1>
+      <div class="level">Level <span id="level-number">1</span></div>
+      <div class="image-container">
+        <img id="picture" src="images/apple.jpg" alt="Guess the picture">
+      </div>
+      <input type="text" id="answer" placeholder="Type your answer...">
+      <div class="buttons">
+        <button class="btn submit" onclick="checkAnswer()">Submit</button>
+        <button class="btn speak" onclick="startVoiceRecognition()">
+          <span>&#127908; Speak</span>
+        </button>
+      </div>
+      <div id="result" class="result-text"></div>
+      <button class="btn exit" onclick="exitGame()">Exit</button>
+    </div>
+
+    <div id="game-complete" class="game-box hidden">
+      <h2>Congratulations!</h2>
+      <p>You finished the game.</p>
+      <button class="btn" onclick="restartGame()">Play Again</button>
+    </div>
+  </div>
+
+  <script src="script-tebak-gambar.js"></script>
+</body>
+</html>
