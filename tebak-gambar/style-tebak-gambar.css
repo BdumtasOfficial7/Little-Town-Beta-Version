@@ -25,6 +25,10 @@ body {
   border-radius: 18px;
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
   text-align: center;
+  background-image: url(img-tebak-gambar/img-bg-tebak-gambar.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   animation: fadeIn 0.6s ease-in-out;
 }
 
@@ -88,8 +92,13 @@ input[type="text"] {
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  color: white;
+  color: rgb(255, 255, 255);
   transition: 0.3s ease;
+}
+
+.btn a {
+  text-decoration: none;
+  color: white;
 }
 
 .submit {
@@ -116,7 +125,8 @@ input[type="text"] {
 .result-text {
   font-size: 18px;
   font-weight: 600;
-  color: #2d3436;
+  color: #000000;
+  margin-top: 10px;
 }
 
 .hidden {

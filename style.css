@@ -93,6 +93,26 @@ body {
     border-radius: 50%;
 }
 
+#rumah2 .play-tebak-gambar {
+    width: 50px;
+    height: 30px;
+    background-color: rgb(233, 70, 52);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+#rumah2 .play-tebak-gambar a, #rumah2 a{
+    color: white;
+    text-decoration: none;
+}
+
+#rumah2 {
+    text-decoration: none;
+}
+
 /* Block 5 */
 .person-bar {
     display: flex;
@@ -101,13 +121,13 @@ body {
     padding: 70px;
 }
 
-.person {
+.person, .rumah2 {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.person a {
+.person a, .rumah2 a {
     text-decoration: none;
     color: white;
 }
